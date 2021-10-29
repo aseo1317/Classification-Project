@@ -2,10 +2,10 @@
 Andrew Seo
 
 ## Abstract:
-
+Over my first four years in New York, I was just another college student who treated alcohol (including wine) as a means to an end. In my last four years in New York, I have developed a love for wine, specifically natural wine. New York has also seen an explosive growth in wine and natural wines with new wine stores and wine bars opening seemingly monthly. Just ten minutes from me is an intersection with 3 wine bars all looking at each other and 2 wine stores. I want to share this love of wine and there is no better way to get people to like wines than by drinking good ones. I attempt to dig into a wine review dataset to determine which factors had the most impact on good wines. I used pandas to clean and perform EDA on my data, different scikit-learn packages for modeling, and matplot and seaborn for visualizations.
 
 ## Design:
-
+My intended end goal of this project was to create a model(s) that could serve as a soft recommendation system for the average consumer or perhaps wine store employees looking for some recommendation guidance, with the caveat that wine can be very subjective so context and preference does matter. I tried out a variety of classification models and made adjustments to get a general sense of how they performed. After picking the best performing model, I tested on my holdout set.   
 
 ## Data:
 I downloaded a Kaggle dataset of 130,000 rows scraped from WineEnthusiast in 2017. Almost all of the columns (except for price and vintage) are categorical variables, which required me to consolidate values in some columns (e.g. U.S., France, Other) and create dummy variables. 
@@ -13,7 +13,7 @@ I downloaded a Kaggle dataset of 130,000 rows scraped from WineEnthusiast in 201
 ## Algorithms:
 
 **_Data Cleaning and EDA_**
-1. Dropped unecessary columns and columns with too many missing values
+1. Dropped unnecessary columns and columns with too many missing values
 2. Created vintage column from wine titles
 3. Copied original dataset
 4. Grouped remaining categorical features into a top 5 or top 10 with the rest being "other"
